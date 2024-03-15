@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect...</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(241, 248, 255);
+      height: 100vh;
+    }
+
+    .wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <img src="/img/waiting.gif" alt="waiting" style="width: 70px; margin-bottom: 10px;">
+    Đang điều hướng. Vui lòng chờ chút...
+  </div>
+</body>
+
+<script>
+  location.replace("/porfolio");
+</script>
+</html>

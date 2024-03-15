@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thời khóa biểu</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/tkb.css">
+</head>
+<body>
+  <div class="background-menu" id="background-menu"></div>
+
+  <div class="wrapper">
+    <!--Start of header-->
+    <header></header>
+    <!--End of header-->
+
+    <!--Start of main-->
+    <main>
+      <div class="container">
+        <div id="tkb" class="tkb-image">
+          <div id="img" class="">
+            <img src="/img/quick-access/23-24_2.png" alt="" class="img-tkb" id="imgTKB">
+          </div>
+          <div class="caption">
+            <button onclick="prevImage()">Prev</button>
+            <button class="next-phone" onclick="nextImage()">Next</button>
+            <span class="title" id="title">Học kì 2 (23-24)</span>
+            <button class="next-pc" onclick="nextImage()">Next</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--End of main-->
+
+    <!--Footer-->
+    <footer>&copy; 2024 by Tran Tuan Sang</footer>
+  </div>
+</body>
+
+<script src="/js/header.js"></script>
+<script>
+  const listHinh = [
+    {img: "/img/quick-access/23-24_2.png",  caption: "Học kì 2 (23-24)"},
+    {img: "/img/quick-access/23-24_1.png",  caption: "Học kì 1 (23-24)"},
+    {img: "/img/quick-access/22-23_H.png",  caption: "Học kì hè (22-23)"},
+    {img: "/img/quick-access/22-23_2.png",  caption: "Học kì 2 (22-23)"},
+    {img: "/img/quick-access/22-23_1.png",  caption: "Học kì 1 (22-23)"},
+    {img: "/img/quick-access/21-22_H.png",  caption: "Học kì hè (21-22)"},
+    {img: "/img/quick-access/21-22_2.png",  caption: "Học kì 2 (21-22)"},
+    {img: "/img/quick-access/21-22_1.png",  caption: "Học kì 1 (21-22)"}
+  ]
+
+  let index = 0;
+  function prevImage() {
+    index = (index === 0) ? listHinh.length - 1 : index - 1;
+    document.getElementById("imgTKB").setAttribute("src", listHinh[index].img);
+    document.getElementById("title").innerHTML = listHinh[index].caption;
+  }
+
+  function nextImage() {
+    index = (index === listHinh.length - 1) ? 0 : index + 1;
+    document.getElementById("imgTKB").setAttribute("src", listHinh[index].img);
+    document.getElementById("title").innerHTML = listHinh[index].caption;
+  }
+</script>
+
+</html>
