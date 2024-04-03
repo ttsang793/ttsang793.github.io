@@ -2,26 +2,26 @@ document.getElementsByTagName("header")[0].innerHTML = `
 <nav>
   <div>
     <img src="/img/logo.png" alt="web-logo" class="head-logo">
-    <i>ttsang793's page</i>
+    <i>Sang's page</i>
   </div>
 
-  <div class="single-button">
-    <img src="/img/menu.png" alt="web-logo" class="head-logo" onclick="menuClick()">
+  <div class="single-button" onclick="menuClick()">
+    <img src="/img/menu.png" alt="web-logo" class="head-logo">
   </div>
 
   <div class="full-button">
-    <a href="/porfolio"><button>Porfolio</button></a></button>
-    <a href="/blog"><button>Blog</button></a></button>
+    <a href="/"><button>Home</button></a></button>
+    <a href="/about"><button>About</button></a></button>
+    <a href="/portfolio"><button>Portfolio</button></a></button>
     <a href="/resources"><button>Resources</button></a></button>
-    <a href="/quick-access"><button>Quick Access</button></a></button>
   </div>
 </nav>
 
 <div class="button-menu" id="button-menu">
-  <a href="/porfolio"><button>Porfolio</button></a></button>
-  <a href="/blog"><button>Blog</button></a></button>
+  <a href="/"><button>Home</button></a></button>
+  <a href="/about"><button>About</button></a></button>
+  <a href="/portfolio"><button>Portfolio</button></a></button>
   <a href="/resources"><button>Resources</button></a></button>
-  <a href="/quick-access"><button>Quick Access</button></a></button>
 </div>
 `
 
@@ -32,6 +32,7 @@ window.addEventListener("resize", () => {
 });
 
 function menuClick() {
+  console.log("Hello");
   if (document.getElementById('button-menu').style.display != 'initial') {
     document.getElementById('button-menu').style.display = 'initial';
     document.getElementById('background-menu').style.display = 'initial';
@@ -43,3 +44,5 @@ function menuClick() {
     document.body.style.overflow = 'initial';
   }
 }
+
+document.getElementsByTagName("footer")[0].innerHTML = `&copy; ${new Date().getYear() + 1900} by Tran Tuan Sang`;

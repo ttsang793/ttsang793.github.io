@@ -1,0 +1,33 @@
+.section {
+  padding: 30px 0px;
+}
+
+.link_list {
+  padding-left: 40px;
+
+  & > li {
+    font-size: 24px;
+
+    * {
+      font-size: 22px;
+      transition: 0.1s;
+
+      &:hover {
+        font-weight: 500;
+        text-decoration: underline;
+        color: rgb(25, 100, 170);
+      }
+    }
+  }
+}
+
+.small-heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.softwares {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+}

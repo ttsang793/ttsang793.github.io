@@ -1,36 +1,115 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirect...</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="background-menu" id="background-menu"></div>
 
-  <style>
-    body {
-      margin: 0;
-      background-color: rgb(241, 248, 255);
-      height: 100vh;
-    }
+    <div class="wrapper">
+      <header></header>
+      <div id="background-menu"></div>
 
-    .wrapper {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      font-family: sans-serif;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-    <img src="/img/waiting.gif" alt="waiting" style="width: 70px; margin-bottom: 10px;">
-    Đang điều hướng. Vui lòng chờ chút...
-  </div>
-</body>
+      <main>
+        <div class="introduce section">
+          <div class="avatar">
+            <img src="/img/ava.jpg" alt="ttsang">
+          </div>
+          <div>
+            <div class="heading extra_bold" id="hello_world">Xin chào thế giới!</div>
+            <div id="greeting"></div>
+          </div>
+        </div>
 
-<script>
-  location.replace("/porfolio");
-</script>
+        <div class="project-section section">
+          <div class="heading extra_bold center">MỘT SỐ PROJECT</div>
+
+          <div class="list project-list pt pb">
+            <div class="project pointer">
+              <img src="./img/porfolio/turmeric.png" alt="turmeric">
+              <div class="center">Cửa hàng Turmeric</div>
+            </div>
+            
+            <div class="project pointer">
+              <img src="./img/porfolio/launcher.png" alt="launcher">
+              <div class="center">Launcher phần mềm</div>
+            </div>
+            
+            <div class="project pointer">
+              <img src="./img/porfolio/laptop.png" alt="laptop">
+              <div class="center">Cửa hàng Binary</div>
+            </div>
+          </div>
+
+          <div class="center">
+            <a href="/portfolio">
+              <button class="button pointer">Xem tất cả project</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="game-section section">
+          <div class="heading extra_bold center">GAME</div>
+          <div class="center">Mình rất thích chơi các game giả lập (lái xe là chủ yếu), game quản lý và casual game. Đây là một số game mình thường hay chơi</div>
+
+          <div class="list game-list">
+            <a class="game pointer" href="https://store.steampowered.com/app/270880/American_Truck_Simulator/">
+                <img src="./img/game/ats.webp" alt="ats">
+            </a>
+
+            <a class="game pointer" href="https://store.steampowered.com/app/3300/Bejeweled_2_Deluxe/">
+                <img src="./img/game/bejeweled2.webp" alt="bejeweled2">
+            </a>
+            
+            <a class="game pointer" href="https://store.steampowered.com/app/1510460/Chicken_Invaders_Universe/">
+                <img src="./img/game/chicken.png" alt="chicken">
+            </a>
+            
+            <a class="game pointer" href="https://store.steampowered.com/app/232010/Euro_Truck_Simulator/">
+                <img src="./img/game/ets1.webp" alt="ets1">
+            </a>
+            
+            <a class="game pointer" href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/">
+                <img src="./img/game/ets2.webp" alt="ets2">
+            </a>
+            
+            <a class="game pointer" href="https://store.steampowered.com/app/3390/Feeding_Frenzy_2_Deluxe/">
+                <img src="./img/game/ff2.png" alt="ff2">
+            </a>
+
+            <a class="game pointer" href="https://store.steampowered.com/app/1937500/Lets_School/">
+                <img src="./img/game/letschool.webp" alt="letschool">
+            </a>
+            
+            <a class="game pointer" href="https://sudoku.com/vi/vua/">
+                <img src="./img/game/sudoku.webp" alt="sudoku">
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+
+  <script src="/js/header.js"></script>
+  <script>
+    const hello = "Mình là Trần Tuấn Sang, hiện là sinh viên năm 3 ngành Kỹ thuật phần mềm, đang học tại trường Đại học Sài Gòn, TP. Hồ Chí Minh.";
+
+    if (window.innerWidth < 700) document.getElementById("greeting").innerHTML = hello;
+    else document.getElementById("greeting").innerHTML =  hello + " Mình yêu thích lập trình ra các trang web một cách linh hoạt và dễ nhìn nhất có thể. Ngôn ngữ mình hay sử dụng: JavaScript, Java, C#."
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 700) document.getElementById("greeting").innerHTML = hello;
+      else document.getElementById("greeting").innerHTML = hello + " Mình yêu thích lập trình ra các trang web một cách linh hoạt và dễ nhìn nhất có thể. Ngôn ngữ mình hay sử dụng: JavaScript, Java, C#."
+    });
+  </script>
 </html>

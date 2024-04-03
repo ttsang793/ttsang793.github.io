@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+  </head>
+
+  <body>
+    <div class="background-menu" id="background-menu"></div>
+
+    <div class="wrapper">
+      <header></header>
+
+      <main>
+        <section class="left">
+          <div class="container">
+            <div class="center">
+              <img src="/img/ava.jpg" alt="ts" class="avatar">
+            </div>
+            <div class="name center">Trần Tuấn Sang</div>
+            <div id="self-desc">Sinh viên năm 3 ngành Kỹ thuật phần mềm, chuyên ngành Lập trình web</div>
+
+            <div class="contact-info">
+              <div class="logo">
+                <img src="/img/porfolio/phone.png" alt="phone">
+              </div>
+              <div class="info">0829 924 731</div>
+            </div>
+
+            <a href="mailto:ttsang793@gmail.com">
+              <div class="contact-info">
+                <div class="logo">
+                  <img src="/img/porfolio/email.png" alt="email">
+                </div>
+                <div class="info">ttsang793<wbr>@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="pdf/SangCV.pdf">
+              <div class="contact-info">
+                <div class="logo">
+                  <img src="/img/porfolio/cv.png" alt="cv">
+                </div>
+                <div class="info">CV của mình</div>
+              </div>
+            </a>
+
+            <div class="small-heading center">KẾT NỐI</h3>
+            <div class="social center">
+              <a href="https://facebook.com/ttsang793" class="network">
+                <img src="/img/facebook.png" alt="facebook" class="pointer">
+              </a>
+              <a href="https://github.com/ttsang793/" class="network">
+                <img src="img/github.png" alt="github" class="pointer">
+              </a>
+              <a href="https://www.linkedin.com/in/ttsang793/" class="network">
+                <img src="img/linkedin.png" alt="linkedin" class="pointer">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="right">
+          <div class="section">
+            <div class="heading extra_bold center">PROJECT ĐÃ THỰC HIỆN</div>
+
+            <div class="list">
+              <div class="project pointer center">
+                <img src="/img/porfolio/turmeric.png" alt="turmeric">
+                <div class="title center">Cửa hàng mỹ phẩm Turmeric</div>
+                <div class="category center">Thiết kế web</div>
+              </div>
+              
+              <div class="project pointer center">
+                <img src="/img/porfolio/launcher.png" alt="launcher">
+                <div class="title center">Launcher phần mềm</div>
+                <div class="category center">Desktop Application</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section">
+            <div class="heading extra_bold center">PROJECT ĐANG THỰC HIỆN</div>
+
+            <div class="list">
+              <div class="project pointer center">
+                <img src="/img/porfolio/ongoing.png" alt="turmeric">
+                <div class="title center">Cửa hàng đồng hồ</div>
+                <div class="category center">Backend web</div>
+              </div>
+
+              <div class="project pointer center">
+                <img src="/img/porfolio/ongoing.png" alt="pharmacy">
+                <div class="title center">Cửa hàng bán thuốc</div>
+                <div class="category center">Desktop Application</div>
+              </div>
+              
+              <div class="project pointer center">
+                <img src="/img/porfolio/laptop.png" alt="binary">
+                <div class="title center">Cửa hàng laptop Binary</div>
+                <div class="category center">Desktop (Server), Backend web (Client)</div>
+              </div>
+            </div>
+          </div>          
+
+          <div class="section">
+            <div class="heading extra_bold center">HOẠT ĐỘNG KHÁC</div>
+
+            <div class="list">
+              <div class="project pointer center">
+                <img src="/img/porfolio/a15.jpg" alt="ongoing">
+                <div class="title center">Flashmod HungVuong 12A15 (2021)</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+
+  <script src="/js/header.js"></script>
+  <script>
+    if (window.innerWidth < 750) document.getElementById("self-desc").classList.add("center");
+    else document.getElementById("self-desc").classList.remove("center");
+
+    window.addEventListener("resize", () => {      
+      if (window.innerWidth < 750) document.getElementById("self-desc").classList.add("center");
+      else document.getElementById("self-desc").classList.remove("center");
+    });
+  </script>
+</html>

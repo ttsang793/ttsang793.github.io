@@ -1,0 +1,142 @@
+main {
+  padding: 0px;
+  padding-top: 25px;
+}
+
+.section {
+  padding: 50px 30px;
+}
+
+.introduce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  column-gap: 20px;
+}
+
+#hello_world {
+  margin-bottom: 20px;
+}
+
+.project-section {
+  background-color: rgb(233, 244, 255);
+}
+
+.project {
+  width: 100%;
+  max-width: 400px;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 4px;
+
+  & > img {
+    transition: 0.3s;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: rgb(25, 100, 170);
+    animation: 1s pulse;
+    box-shadow: 0 0 0 1em transparent;
+
+    & * {
+      color: white;
+      font-weight: 500;
+    }
+
+    ~:not(:hover) {
+      filter: grayscale(100%);
+    }
+  }
+
+  &:has(~:hover) {
+    filter: grayscale(100%);
+  }
+}
+
+.button {
+  background: linear-gradient(to right, rgb(25, 100, 170) 50%, rgb(160, 207, 250) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .35s ease-out;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: none;
+
+  &:hover {
+    background-position: left bottom;
+    color: white;
+  }
+}
+
+.game-section {
+  background-color: rgb(244, 224, 255);
+  
+  .list {
+    column-gap: 20px;
+  }
+}
+
+.game {
+  width: 100%;
+  max-width: 320px;
+  margin: auto 0;
+  aspect-ratio: 4/3;
+  background-color: rgb(50,50,50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+
+  & > img {
+    transition: 0.3s;
+    width: 80%;
+  }  
+
+  &:hover {
+    ~:not(:hover) {
+      filter: grayscale(100%);
+      background-color: rgb(127, 127, 127);    
+      & > img {
+        scale: 0.9;
+      }
+    }
+  }
+
+  &:has(~:hover) {
+      filter: grayscale(100%);
+      background-color: rgb(127, 127, 127);    
+      & > img {
+        scale: 0.9;
+      }
+  }
+}
+
+@media (max-width: 699px) {
+  .avatar img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+  }
+
+  .introduce {
+    flex-direction: column;
+  }
+
+  #hello_world {
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .avatar img {
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  .introduce {
+    margin: 150px auto;
+  }
+}
