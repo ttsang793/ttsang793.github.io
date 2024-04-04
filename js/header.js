@@ -32,7 +32,6 @@ window.addEventListener("resize", () => {
 });
 
 function menuClick() {
-  console.log("Hello");
   if (document.getElementById('button-menu').style.display != 'initial') {
     document.getElementById('button-menu').style.display = 'initial';
     document.getElementById('background-menu').style.display = 'initial';
