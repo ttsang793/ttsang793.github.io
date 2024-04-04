@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/error.css">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
   </head>
   <body>
@@ -18,7 +19,14 @@
       <div id="background-menu"></div>
 
       <main>
-        <div class="heading extra_bold">PAGE NOT FOUND</div>
+        <div class="error-content">
+          <div class="code extra_bold">404</div>
+          <div class="heading extra_bold">TRANG KHÔNG TÌM THẤY</div>
+          <img src="https://media.tenor.com/v_W_gDtULNwAAAAi/confused-face.gif" alt="error" height="220px">
+          <div class="mb">Bạn có thể đang truy cập vào một trang cũ của mình hoặc nhập sai đường link.</div>
+          <button class="button pointer mb" onclick="history.back()">Quay lại trang trước</button>
+          <button class="button pointer mb" onclick="location.href='/'">Đi đến trang chủ</button>
+        </div>
       </main>
 
       <footer></footer>

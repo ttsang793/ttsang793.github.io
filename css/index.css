@@ -56,65 +56,7 @@ main {
   }
 }
 
-.button {
-  background: linear-gradient(to right, rgb(25, 100, 170) 50%, rgb(160, 207, 250) 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .35s ease-out;
-  padding: 6px 20px;
-  border-radius: 50px;
-  border: none;
-
-  &:hover {
-    background-position: left bottom;
-    color: white;
-  }
-}
-
-.game-section {
-  background-color: rgb(244, 224, 255);
-  
-  .list {
-    column-gap: 20px;
-  }
-}
-
-.game {
-  width: 100%;
-  max-width: 320px;
-  margin: auto 0;
-  aspect-ratio: 4/3;
-  background-color: rgb(50,50,50);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-
-  & > img {
-    transition: 0.3s;
-    width: 80%;
-  }  
-
-  &:hover {
-    ~:not(:hover) {
-      filter: grayscale(100%);
-      background-color: rgb(127, 127, 127);    
-      & > img {
-        scale: 0.9;
-      }
-    }
-  }
-
-  &:has(~:hover) {
-      filter: grayscale(100%);
-      background-color: rgb(127, 127, 127);    
-      & > img {
-        scale: 0.9;
-      }
-  }
-}
-
-@media (max-width: 699px) {
+@media (max-width: 749px) {
   .avatar img {
     width: 100%;
     max-width: 300px;
@@ -130,7 +72,7 @@ main {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
   .avatar img {
     width: 300px;
     border-radius: 50%;

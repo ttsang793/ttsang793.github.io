@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+
+  * {
+    line-height: initial;
+  }
+}
+
+.error-content {
+  text-align: center;
+
+  * {
+    text-align: center;
+  }
+}
+
+.code {
+  font-size: 96px;
+}
+
+.button {
+  line-height: 36px;
+  width: 220px;
+}

@@ -21,11 +21,16 @@
       <main>
         <div class="introduce section">
           <div class="avatar">
-            <img src="/img/ava.jpg" alt="ttsang">
+            <img src="/img/ttsang.jpg" alt="ts">
           </div>
           <div>
             <div class="heading extra_bold" id="hello_world">Xin chào thế giới!</div>
             <div id="greeting"></div>
+            <div id="see_more" class="pt">
+              <a href="/about">
+                <button class="button pointer">Xem thêm về mình</button>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -55,45 +60,6 @@
             </a>
           </div>
         </div>
-
-        <div class="game-section section">
-          <div class="heading extra_bold center">GAME</div>
-          <div class="center">Mình rất thích chơi các game giả lập (lái xe là chủ yếu), game quản lý và casual game. Đây là một số game mình thường hay chơi</div>
-
-          <div class="list game-list">
-            <a class="game pointer" href="https://store.steampowered.com/app/270880/American_Truck_Simulator/">
-                <img src="./img/game/ats.webp" alt="ats">
-            </a>
-
-            <a class="game pointer" href="https://store.steampowered.com/app/3300/Bejeweled_2_Deluxe/">
-                <img src="./img/game/bejeweled2.webp" alt="bejeweled2">
-            </a>
-            
-            <a class="game pointer" href="https://store.steampowered.com/app/1510460/Chicken_Invaders_Universe/">
-                <img src="./img/game/chicken.png" alt="chicken">
-            </a>
-            
-            <a class="game pointer" href="https://store.steampowered.com/app/232010/Euro_Truck_Simulator/">
-                <img src="./img/game/ets1.webp" alt="ets1">
-            </a>
-            
-            <a class="game pointer" href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/">
-                <img src="./img/game/ets2.webp" alt="ets2">
-            </a>
-            
-            <a class="game pointer" href="https://store.steampowered.com/app/3390/Feeding_Frenzy_2_Deluxe/">
-                <img src="./img/game/ff2.png" alt="ff2">
-            </a>
-
-            <a class="game pointer" href="https://store.steampowered.com/app/1937500/Lets_School/">
-                <img src="./img/game/letschool.webp" alt="letschool">
-            </a>
-            
-            <a class="game pointer" href="https://sudoku.com/vi/vua/">
-                <img src="./img/game/sudoku.webp" alt="sudoku">
-            </a>
-          </div>
-        </div>
       </main>
 
       <footer></footer>
@@ -103,13 +69,19 @@
   <script src="/js/header.js"></script>
   <script>
     const hello = "Mình là Trần Tuấn Sang, hiện là sinh viên năm 3 ngành Kỹ thuật phần mềm, đang học tại trường Đại học Sài Gòn, TP. Hồ Chí Minh.";
+    resize();
 
-    if (window.innerWidth < 700) document.getElementById("greeting").innerHTML = hello;
-    else document.getElementById("greeting").innerHTML =  hello + " Mình yêu thích lập trình ra các trang web một cách linh hoạt và dễ nhìn nhất có thể. Ngôn ngữ mình hay sử dụng: JavaScript, Java, C#."
+    function resize() {
+      if (window.innerWidth < 750) {
+        document.getElementById("greeting").innerHTML = hello;
+        document.getElementById("see_more").classList.add("center");
+      }
+      else {
+        document.getElementById("greeting").innerHTML =  hello + " Mình yêu thích lập trình ra các trang web một cách linh hoạt và dễ nhìn nhất có thể. Ngôn ngữ mình hay sử dụng: JavaScript, Java, C#."
+        document.getElementById("see_more").classList.remove("center");
+      }
+    }
 
-    window.addEventListener("resize", () => {
-      if (window.innerWidth < 700) document.getElementById("greeting").innerHTML = hello;
-      else document.getElementById("greeting").innerHTML = hello + " Mình yêu thích lập trình ra các trang web một cách linh hoạt và dễ nhìn nhất có thể. Ngôn ngữ mình hay sử dụng: JavaScript, Java, C#."
-    });
+    window.addEventListener("resize", () => resize());
   </script>
 </html>

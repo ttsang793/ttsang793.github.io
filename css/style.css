@@ -36,6 +36,14 @@ a {
   text-align: center;
 }
 
+.mt {
+  margin-top: 15px;
+}
+
+.mb {
+  margin-bottom: 15px;
+}
+
 .pb {
   padding-bottom: 15px;
 }
@@ -44,6 +52,41 @@ a {
   padding-top: 15px;
 }
 
+.disabled {
+  display: none;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  background: linear-gradient(to right, rgb(25, 100, 170) 50%, rgb(160, 207, 250) 50%);
+  background-size: 201% 100%;
+  background-position: right bottom;
+  transition: all .35s ease-out;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: none;
+
+  &:hover {
+    background-position: left bottom;
+    color: white;
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgb(120, 190, 255); }
+}
+
+/*style for pages*/
 body {
   height: 100vh;
 }
@@ -61,7 +104,7 @@ header {
   right: 0;
   background-color: rgb(160, 207, 250);
   height: 40px;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav {
@@ -88,22 +131,10 @@ nav a {
   transition-duration: 0.25s;
 }
 
-.full-button button {
-  height: 40px;
-
-  &:hover {
-    box-shadow: inset -75px 0 0 0 rgb(25, 100, 170), inset 75px 0 0 0 rgb(25, 100, 170);
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-}
-
 .button-menu {
   display: none;
-  z-index: 2;
 
-  button {
+  * {
     height: 55px;
 
     &:hover {
@@ -123,12 +154,23 @@ nav a {
   bottom: 0;
   right: 0;
   display: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 .full-button {
   display: grid;
   grid-template-columns: 130px 130px 130px 130px;
+}
+
+.full-button button {
+  height: 40px;
+
+  &:hover {
+    box-shadow: inset -75px 0 0 0 rgb(25, 100, 170), inset 75px 0 0 0 rgb(25, 100, 170);
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
 
 main {
@@ -144,7 +186,7 @@ footer {
   padding: 2px 0;
 }
 
-@media (max-width: 849px) {
+@media (max-width: 799px) {
   .full-button {
     display: none;
   }
@@ -156,7 +198,7 @@ footer {
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 800px) {
   .single-button {
     display: none;
   }
@@ -165,23 +207,4 @@ footer {
     display: grid;
     grid-template-columns: 1fr 520px;
   }
-}
-
-.disabled {
-  display: none;
-}
-
-.hidden {
-  overflow: hidden;
-}
-
-.list {
-  display: flex;
-  row-gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgb(120, 190, 255); }
 }

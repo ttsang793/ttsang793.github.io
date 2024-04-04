@@ -10,18 +10,18 @@ document.getElementsByTagName("header")[0].innerHTML = `
   </div>
 
   <div class="full-button">
-    <a href="/"><button>Home</button></a></button>
-    <a href="/about"><button>About</button></a></button>
-    <a href="/portfolio"><button>Portfolio</button></a></button>
-    <a href="/resources"><button>Resources</button></a></button>
+    <a href="/"><button>Home</button></a>
+    <a href="/about"><button>About</button></a>
+    <a href="/portfolio"><button>Portfolio</button></a>
+    <a href="/resources"><button>Resources</button></a>
   </div>
 </nav>
 
 <div class="button-menu" id="button-menu">
-  <a href="/"><button>Home</button></a></button>
-  <a href="/about"><button>About</button></a></button>
-  <a href="/portfolio"><button>Portfolio</button></a></button>
-  <a href="/resources"><button>Resources</button></a></button>
+  <a href="/"><button>Home</button></a>
+  <a href="/about"><button>About</button></a>
+  <a href="/portfolio"><button>Portfolio</button></a>
+  <a href="/resources"><button>Resources</button></a>
 </div>
 `
 
