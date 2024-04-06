@@ -10,33 +10,32 @@
   padding-left: 40px;
   padding-right: 20px;
 
-  & > li {
-    font-size: 24px;
+  & > li * {
+    transition: 0.1s;
 
-    * {
-      font-size: 22px;
-      transition: 0.1s;
-
-      &:hover {
-        font-weight: 500;
-        text-decoration: underline;
-        color: rgb(25, 100, 170);
-      }
+    &:hover {
+      font-weight: 500;
+      text-decoration: underline;
+      color: rgb(25, 100, 170);
     }
   }
+}
+
+.link_list > li {
+  font-size: 24px;
+}
+
+.link_list > li * {
+  font-size: 22px;
 }
 
 .quick-access {
   background-color: rgba(10, 67, 121, 0.9);
   margin: 0 -10px;
+}
 
-  * {
-    color: white;
-  }
-
-  li *:hover {
-    color: white;
-  }
+.quick-access *, .quick-access li *:hover {
+  color: white;
 }
 
 .small-heading {

@@ -31,11 +31,6 @@ main {
   padding: 10px;
   border-radius: 4px;
 
-  & > img {
-    transition: 0.3s;
-    width: 100%;
-  }
-
   &:hover {
     background-color: rgb(25, 100, 170);
     animation: 1s pulse;
@@ -54,6 +49,11 @@ main {
   &:has(~:hover) {
     filter: grayscale(100%);
   }
+}
+
+.project > img {
+  transition: 0.3s;
+  width: 100%;
 }
 
 @media (max-width: 749px) {

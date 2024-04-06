@@ -75,11 +75,11 @@ a {
   padding: 6px 20px;
   border-radius: 50px;
   border: none;
+}
 
-  &:hover {
-    background-position: left bottom;
-    color: white;
-  }
+.button:hover {
+  background-position: left bottom;
+  color: white;
 }
 
 @keyframes pulse {
@@ -133,17 +133,17 @@ nav a {
 
 .button-menu {
   display: none;
+}
 
-  * {
-    height: 55px;
+.button-menu * {
+  height: 55px;
+}
 
-    &:hover {
-      background-color: rgb(25, 100, 170);
-      color: white;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-  }
+.button-menu *:hover {
+  background-color: rgb(25, 100, 170);
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .background-menu {
@@ -164,13 +164,13 @@ nav a {
 
 .full-button button {
   height: 40px;
+}
 
-  &:hover {
-    box-shadow: inset -75px 0 0 0 rgb(25, 100, 170), inset 75px 0 0 0 rgb(25, 100, 170);
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+.full-button button:hover {
+  box-shadow: inset -75px 0 0 0 rgb(25, 100, 170), inset 75px 0 0 0 rgb(25, 100, 170);
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 main {

@@ -3,18 +3,14 @@ main {
   align-items: center;
   justify-content: center;
   padding-top: 50px;
-
-  * {
-    line-height: initial;
-  }
 }
 
-.error-content {
-  text-align: center;
+main * {
+  line-height: initial;
+}
 
-  * {
-    text-align: center;
-  }
+.error-content, .error-content * {
+  text-align: center;
 }
 
 .code {

@@ -8,10 +8,10 @@
 
 .intro {
   background-color: rgba(10, 67, 121, 0.9);
+}
 
-  * {
-    color: white;
-  }
+.intro * {
+  color: white;
 }
 
 .introduce {
@@ -20,10 +20,10 @@
 
 .game-section {
   background-color: rgb(244, 224, 255);
-  
-  .list {
-    column-gap: 20px;
-  }
+}
+
+.game-section .list {
+  column-gap: 20px;
 }
 
 .game {
@@ -36,11 +36,6 @@
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-
-  & > img {
-    transition: 0.3s;
-    width: 80%;
-  }  
 
   &:hover {
     ~:not(:hover) {
@@ -59,6 +54,11 @@
         scale: 0.9;
       }
   }
+}
+
+.game img {
+  transition: 0.3s;
+  width: 80%;
 }
 
 @media (min-width: 700px) {
