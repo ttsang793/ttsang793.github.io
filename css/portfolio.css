@@ -80,23 +80,22 @@ main {
 }
 
 .info {
-  background: linear-gradient(to right, #1a55a3 50%, #c7ebfc 50%);
-  background-size: 200% 100%;
+  background: linear-gradient(to right, rgb(25, 100, 170) 50%, rgb(199, 235, 252) 50%);
+  background-size: 201% 100%;
   background-position: right bottom;
-  transition: background 0.5s ease-in-out, box-shadow 1.25s ease-in-out, color 0.5s;
-  color: #104486;
+  transition: all .35s ease-out;
+  border: none;
   flex: 1;
   margin-left: -20px;
   padding-left: 25px;
   padding-right: 10px;
   border-radius: 0 20px 20px 0;
   line-height: initial;
+}
 
-  &:hover {
-    background-position: left bottom;
-    box-shadow: -10px -10px 20px inset #000c1b;
-    color: #e6f2f8;
-  }
+.info:hover {
+  background-position: left bottom;
+  color: white;
 }
 
 .small-heading {

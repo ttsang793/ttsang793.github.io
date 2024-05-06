@@ -68,7 +68,7 @@ a {
 }
 
 .button {
-  background: linear-gradient(to right, rgb(25, 100, 170) 50%, rgb(160, 207, 250) 50%);
+  background: linear-gradient(to right, rgb(25, 100, 170) 50%, rgb(199, 235, 252) 50%);
   background-size: 201% 100%;
   background-position: right bottom;
   transition: all .35s ease-out;
@@ -102,7 +102,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(160, 207, 250);
+  background-color: rgb(199, 235, 252);
   height: 40px;
   z-index: 2;
 }
@@ -125,7 +125,7 @@ nav a {
   width: 100%;
   font-size: 20px;
   text-align: center;
-  background-color: rgb(160, 207, 250);
+  background-color: rgb(199, 235, 252);
   border: none;
   cursor: pointer;
   transition-duration: 0.25s;
@@ -181,7 +181,7 @@ main {
 }
 
 footer {
-  background-color: rgb(160, 207, 250);
+  background-color: rgb(199, 235, 252);
   text-align: center;
   padding: 2px 0;
 }

@@ -23,6 +23,8 @@
 }
 
 .game-section .list {
+  max-width: 1000px;
+  margin: 0 auto;
   column-gap: 20px;
 }
 
