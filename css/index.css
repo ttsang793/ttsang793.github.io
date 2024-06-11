@@ -1,27 +1,38 @@
-main {
-  padding: 0px;
-  padding-top: 25px;
-}
-
 .section {
   padding: 50px 30px;
 }
 
-.introduce {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1000px;
-  width: 100%;
-  column-gap: 20px;
+main {
+  padding: 0;
+  padding-top: 40px;
 }
 
-#hello_world {
-  margin-bottom: 20px;
+.introduce {
+  background: rgb(25, 100, 170);
+  background: linear-gradient(60deg, rgb(25, 100, 170) 0%, #0a3864 100%);
+}
+
+.introduce * {
+  color: rgb(230, 230, 230);
+}
+
+.sub-hello {
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .project-section {
-  background-color: rgb(233, 244, 255);
+  background-color: rgba(0, 0, 70, 0.15);
+}
+
+.project:hover {
+  background-color: rgb(25, 100, 170);
+  box-shadow: 0 0 0 1em transparent;
+}
+
+.project:hover > * {
+  color: white;
+  font-weight: 500;
 }
 
 .project {
@@ -33,7 +44,6 @@ main {
 
   &:hover {
     background-color: rgb(25, 100, 170);
-    animation: 1s pulse;
     box-shadow: 0 0 0 1em transparent;
 
     & * {
@@ -42,13 +52,20 @@ main {
     }
 
     ~:not(:hover) {
-      filter: grayscale(100%);
+      filter: brightness(50%) grayscale(100%);
     }
   }
 
   &:has(~:hover) {
-    filter: grayscale(100%);
+    filter: brightness(50%) grayscale(100%);
   }
+}
+
+.list {
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project > img {
@@ -57,28 +74,32 @@ main {
 }
 
 @media (max-width: 749px) {
-  .avatar img {
+  .hello {
+    font-size: 40px;
+  }
+
+  .avatar {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     border-radius: 50%;
   }
 
   .introduce {
-    flex-direction: column;
-  }
-
-  #hello_world {
-    text-align: center;
+    padding: 50px 10px;
   }
 }
 
 @media (min-width: 750px) {
-  .avatar img {
-    width: 300px;
+  .hello {
+    font-size: 64px;
+  }
+
+  .avatar {
+    width: 200px;
     border-radius: 50%;
   }
 
   .introduce {
-    margin: 150px auto;
+    padding: 24.5vh 0;
   }
 }
