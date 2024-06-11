@@ -2,7 +2,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
 }
 
 main * {
@@ -19,5 +18,5 @@ main * {
 
 .button {
   line-height: 36px;
-  width: 220px;
+  width: 250px;
 }

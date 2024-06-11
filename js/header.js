@@ -1,27 +1,25 @@
 document.getElementsByTagName("header")[0].innerHTML = `
 <nav>
   <div>
-    <img src="/img/logo.png" alt="web-logo" class="head-logo">
+    <img src="img/logo.png" alt="web-logo" class="head-logo">
     <i>Sang's page</i>
   </div>
 
   <div class="single-button" onclick="menuClick()">
-    <img src="/img/menu.png" alt="web-logo" class="head-logo">
+    <img src="img/menu.png" alt="web-logo" class="head-logo">
   </div>
 
   <div class="full-button">
+    <div></div>
     <a href="/"><button>Home</button></a>
-    <a href="/about"><button>About</button></a>
-    <a href="/portfolio"><button>Portfolio</button></a>
-    <a href="/resources"><button>Resources</button></a>
+    <a href="/projects"><button>Projects</button></a>
   </div>
 </nav>
 
 <div class="button-menu" id="button-menu">
-  <a href="/"><button>Home</button></a>
-  <a href="/about"><button>About</button></a>
-  <a href="/portfolio"><button>Portfolio</button></a>
-  <a href="/resources"><button>Resources</button></a>
+    <div></div>
+    <a href="/"><button>Home</button></a>
+    <a href="/projects"><button>Projects</button></a>
 </div>
 `
 

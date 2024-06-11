@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,56 +8,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   </head>
   <body>
     <div class="background-menu" id="background-menu"></div>
 
     <div class="wrapper">
       <header></header>
-      <div id="background-menu"></div>
 
       <main>
-        <div class="introduce section">
-          <div class="avatar">
-            <img src="/img/ttsang.jpg" alt="ts">
+        <div class="introduce center">
+          <img src="img/ttsang.jpg" alt="ttsang" class="avatar">
+          <div class="heading extra_bold center hello">HELLO WORLD</div>
+          <div class="center sub-hello">Tran Tuan Sang, web developer from Ho Chi Minh city, Viet Nam</div>
+          <div class="center sub-hello">Third-year Software Engineering student at Saigon University</div>
+        </div>
+
+        <div class="main-languages section">
+          <div class="heading extra_bold center">MAIN LANGUAGES</div>
+
+          <div class="pt pb center">
+            <img src="img/java.png" alt="java" height="100px" class="mr">
+            <img src="img/csharp.png" alt="csharp" height="100px" class="mr">
+            <img src="img/javascript.png" alt="js" height="100px">
           </div>
-          <div>
-            <div class="heading extra_bold" id="hello_world">Xin chào thế giới!</div>
-            <div id="greeting"></div>
-            <div id="see_more" class="pt">
-              <a href="/about">
-                <button class="button pointer">Xem thêm về mình</button>
-              </a>
-            </div>
+
+          <div class="center">
+            <a href="pdf/SangCV.pdf">
+              <button class="button pointer">My CV</button>
+            </a>
           </div>
         </div>
 
         <div class="project-section section">
-          <div class="heading extra_bold center">MỘT SỐ PROJECT</div>
+          <div class="heading extra_bold center">FEATURED PROJECTS</div>
 
           <div class="list project-list pt pb">
             <div class="project pointer">
-              <img src="./img/portfolio/turmeric.png" alt="turmeric">
-              <div class="center">Cửa hàng Turmeric</div>
+              <img src="./img/projects/turmeric.png" alt="turmeric">
+              <div class="center">Turmeric Cosmetic Store</div>
             </div>
             
             <div class="project pointer">
-              <img src="./img/portfolio/launcher.png" alt="launcher">
-              <div class="center">Launcher phần mềm</div>
+              <img src="./img/projects/launcher.png" alt="launcher">
+              <div class="center">Application Launcher</div>
             </div>
             
             <div class="project pointer">
-              <img src="./img/portfolio/laptop.png" alt="laptop">
-              <div class="center">Cửa hàng Binary</div>
+              <img src="./img/projects/laptop.png" alt="laptop">
+              <div class="center">Binary Computer Store</div>
             </div>
           </div>
 
           <div class="center">
-            <a href="/portfolio">
-              <button class="button pointer">Xem tất cả project</button>
+            <a href="projects">
+              <button class="button pointer">View all projects</button>
             </a>
           </div>
         </div>
@@ -67,22 +74,5 @@
     </div>
   </body>
 
-  <script src="/js/header.js"></script>
-  <script>
-    const hello = "Mình là Trần Tuấn Sang, hiện là sinh viên năm 3 ngành Kỹ thuật phần mềm, đang học tại trường Đại học Sài Gòn, TP. Hồ Chí Minh.";
-    resize();
-
-    function resize() {
-      if (window.innerWidth < 750) {
-        document.getElementById("greeting").innerHTML = hello;
-        document.getElementById("see_more").classList.add("center");
-      }
-      else {
-        document.getElementById("greeting").innerHTML =  hello + " Mình yêu thích lập trình ra các trang web một cách linh hoạt và dễ nhìn nhất có thể. Ngôn ngữ mình hay sử dụng: JavaScript, Java, C#."
-        document.getElementById("see_more").classList.remove("center");
-      }
-    }
-
-    window.addEventListener("resize", () => resize());
-  </script>
+  <script src="js/header.js"></script>
 </html>
