@@ -10,14 +10,12 @@ document.getElementsByTagName("header")[0].innerHTML = `
   </div>
 
   <div class="full-button">
-    <div></div>
     <a href="/"><button>Home</button></a>
     <a href="/projects"><button>Projects</button></a>
   </div>
 </nav>
 
 <div class="button-menu" id="button-menu">
-    <div></div>
     <a href="/"><button>Home</button></a>
     <a href="/projects"><button>Projects</button></a>
 </div>

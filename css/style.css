@@ -161,7 +161,7 @@ nav a {
 
 .full-button {
   display: grid;
-  grid-template-columns: 130px 130px 130px;
+  grid-template-columns: 130px 130px;
 }
 
 .full-button button {
@@ -228,6 +228,6 @@ footer {
 
   nav {
     display: grid;
-    grid-template-columns: 1fr 410px;
+    grid-template-columns: 1fr 280px;
   }
 }
