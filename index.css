@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'Lexend', Arial, sans-serif;
+  outline: none;
+}
+
+.shadow {
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.svg {
+  transition-duration: 300ms;
+  margin: 15px;
+  padding: 0;
+  border-radius: 100%;
+  cursor: pointer;
+
+  svg {
+    transition-duration: 300ms;
+    fill: #e8f2ff;
+    fill-opacity: 1;
+  }
+
+  &:hover {
+    margin: 0;
+    padding: 15px;
+    background-color: #e8f2ff;
+
+    svg {
+      fill: #1964AA;
+    }
+  }
+}
