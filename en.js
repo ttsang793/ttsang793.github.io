@@ -35,7 +35,7 @@ const codeProjects = [
 
 function renderTech(tech) {
   let techHTML = "";
-  tech.forEach(t => techHTML += `<img src="./images/${t}.svg" alt=${t} class="inline me-2" />`);
+  tech.forEach(t => techHTML += `<img src="./images/${t}.svg" alt=${t} class="inline me-2" loading="lazy" />`);
   return techHTML;
 }
 
@@ -48,7 +48,7 @@ function renderCodeProjects() {
   codeProjects.forEach(c => {
     codeHTML += `
       <div class="flex flex-col md:flex-row gap-6 my-7">
-        <img src="./images/${c.code}.png" alt=${c.code} class="md:h-45 lg:h-60 rounded-[20px] shadow">
+        <img src="./images/${c.code}.png" alt=${c.code} class="md:h-45 lg:h-60 rounded-[20px] shadow" loading="eager">
         <div class="text-center md:text-left">
           <h3 class="font-medium text-3xl mb-1 md:mb-2">${c.name}</h3>
           <div class="text-2xl mb-1 md:mb-4">
