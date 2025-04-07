@@ -3,7 +3,7 @@ const codeProjects = [
     code: "mini_textbook",
     name: "Website nhà sách mini",
     year: "Hiện tại",
-    technology: ["react", "tailwind", ".NET"],
+    technology: ["react", "tailwind", "dotnet"],
     description: "Sử dụng kiến trúc Onion ở backend, cùng với giao diện được thiết kế từ thư viện Tailwind.",
     github: "https://www.github.com/ttsang793/MiniTextbook"
   },
@@ -11,7 +11,7 @@ const codeProjects = [
     code: "active_together",
     name: "Website cửa hàng thể thao",
     year: 2024,
-    technology: ["react", "bootstrap", ".NET"],
+    technology: ["react", "bootstrap", "dotnet"],
     description: "Thực hiện trong môn Công nghệ .NET, website cho phép bạn mua và bán đồ thể thao.",
     github: "https://www.github.com/ttsang793/ActiveTogetherStore"
   },

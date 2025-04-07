@@ -3,7 +3,7 @@ const codeProjects = [
     code: "mini_textbook",
     name: "Mini Bookstore",
     year: "Ongoing",
-    technology: ["react", "tailwind", ".NET"],
+    technology: ["react", "tailwind", "dotnet"],
     description: "Using Onion architecture in backend, and UI has been designed using Tailwind.",
     github: "https://www.github.com/ttsang793/MiniTextbook"
   },
@@ -11,7 +11,7 @@ const codeProjects = [
     code: "active_together",
     name: "Sport Shop Website",
     year: 2024,
-    technology: ["react", "bootstrap", ".NET"],
+    technology: ["react", "bootstrap", "dotnet"],
     description: "Creating in .NET Technology, this website allows you to buy and sell sportwears, such as shirts, pants, shoes, accessories, etc.",
     github: "https://www.github.com/ttsang793/ActiveTogetherStore"
   },
