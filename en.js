@@ -29,7 +29,7 @@ const codeProjects = [
     year: 2022,
     technology: ["csharp"],
     description: "This Launcher is an all-in-one software that allows you to link software, folders, and files. Launcher supports Windows 7 and newer.",
-    github: "https://www.github.com/ttsang793/Launcher"
+    github: "https://www.github.com/ttsang793/AppLauncher"
   }
 ];
 

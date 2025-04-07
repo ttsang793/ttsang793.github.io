@@ -29,7 +29,7 @@ const codeProjects = [
     year: 2022,
     technology: ["csharp"],
     description: "Phần mềm này cho phép bạn gom các ứng dụng, file và thư mục vào một launcher duy nhất. Hỗ trợ hệ điều hành Windows 7 trở lên.",
-    github: "https://www.github.com/ttsang793/Launcher"
+    github: "https://www.github.com/ttsang793/AppLauncher"
   }
 ];
 
