@@ -21,7 +21,8 @@ const codeProjects = [
     year: 2023,
     technology: ["bootstrap"],
     description: "Thực hiện trong môn Lập trình web và ứng dụng, website cho phép bạn mua và bán cửa hàng mỹ phẩm.",
-    github: "https://www.github.com/ttsang793/Turmeric"
+    github: "https://www.github.com/ttsang793/Turmeric",
+    demo: "https://turmeric-ttsang793-project.vercel.app/"
   },
   {
     code: "launcher",
@@ -57,9 +58,16 @@ function renderCodeProjects() {
 
           <div class="text-lg mb-7 text-center md:text-justify italic">${c.description}</div>
 
-          <a href=${c.github} class="text-xl px-4 py-2 rounded-xl bg-[#1964AA] text-[#E8F2FF] hover:bg-[#4683BB] duration-150">
+          <a href=${c.github} class="text-xl px-4 py-2 rounded-xl bg-[#1964AA] text-[#E8F2FF] hover:bg-[#4683BB] duration-150 me-2 inline-block">
             <i class="ph-fill ph-github-logo"></i> GitHub
           </a>
+    ` + (c.demo !== undefined ?
+    `
+          <a href=${c.demo} class="text-xl px-4 py-2 rounded-xl bg-[#1964AA] text-[#E8F2FF] hover:bg-[#4683BB] duration-150 inline-block">
+            <i class="ph-fill ph-play"></i> Demo
+          </a>
+    ` : "") +
+    `
         </div>
       </div>
     `
