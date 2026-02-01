@@ -1,8 +1,16 @@
-const codeProjects = [
+const codeProjects = [  
+  {
+    code: "zalo_graduation",
+    name: "Zalo Mini App for High School Student Revision",
+    year: 2025,
+    technology: ["react", "tailwind", "dotnet"],
+    description: "This graduation thesis aims to develop a Zalo Mini App to help high school students easily organize and review their knowledge anytime, anywhere.",
+    github: "https://github.com/ttsang793/RevisionZaloMiniAppFE"
+  },
   {
     code: "mini_textbook",
     name: "Mini Bookstore",
-    year: "Ongoing",
+    year: 2025,
     technology: ["react", "tailwind", "dotnet"],
     description: "Using Onion architecture in backend, and UI has been designed using Tailwind.",
     github: "https://www.github.com/ttsang793/MiniTextbook"

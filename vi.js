@@ -1,8 +1,16 @@
 const codeProjects = [
   {
+    code: "zalo_graduation",
+    name: "Zalo Mini App hỗ trợ ôn tập cho học sinh trung học",
+    year: "2025",
+    technology: ["react", "tailwind", "dotnet"],
+    description: "Khóa luận tốt nghiệp này tập trung phát triển ứng dụng Zalo Mini App hỗ trợ học tập tương tác, giúp học sinh trung học dễ dàng hệ thống hóa và ôn luyện kiến thức mọi lúc, mọi nơi.",
+    github: "https://github.com/ttsang793/RevisionZaloMiniAppFE"
+  },
+  {
     code: "mini_textbook",
     name: "Website nhà sách mini",
-    year: "Hiện tại",
+    year: "2025",
     technology: ["react", "tailwind", "dotnet"],
     description: "Sử dụng kiến trúc Onion ở backend, cùng với giao diện được thiết kế từ thư viện Tailwind.",
     github: "https://www.github.com/ttsang793/MiniTextbook"
